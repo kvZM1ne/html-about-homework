@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
+  <title>Мини-сайт о себе</title>
+</head>
+<body>
+  <header>
+    <h1>Мини-сайт обо мне</h1>
+    <p>
+      Привет! Тут расскажу немного<br> информации о себе
+    </p>
+  </header>
+  <hr>
+  <main>
+    <h2>• Мои хобби •</h2>
+    <p><i>Список широк, но вот основные:</i></p>
+    <ul>
+      <li><mark>IT и всё что связано с ним - кодинг, вёрстка, Git, Linux, <s><i>вайбкодинг</i></s></mark></li>
+      <li>Политология</li>
+      <li>Психология</li>
+      <li>Право</li>
+      <li>Изучение иностранных языков <em>(JA, UA)</em></li>
+    </ul>
+    <hr>
+    <h2>• Моя любимая цитата •</h2>
+    <blockquote>
+      <q><em>Толерантность и прямолинейность - ключ к взаимопониманию</em></q>
+    </blockquote>
+    <hr>
+    <h2>• Лучшие формулы •</h2>
+    <p>Гидрид урана — UH<sub>3</sub></p>
+    <p>Фторид плутонила — PuO<sub>2</sub>F<sub>2</sub></p>
+    <p>Интеграл Гаусса — ∫e<sup>-x<sup>2</sup></sup>dx = √π</p>
+    <hr>
+    <h2>• Легендарный код с 1 года обучения •</h2>
+    <p>...который мы повторяли <strong>даже в конце года</strong>, мы его как стихи <b>Пушкина</b> учили.</p>
+    <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    int arr[] = {64, 25, 12, 22, 11};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    // Сортировка выборкой
+    for (int i = 0; i &lt; n - 1; i++) {
+        int min_idx = i;
+        
+        for (int j = i + 1; j &lt; n; j++) {
+            if (arr[j] &lt; arr[min_idx]) {
+                min_idx = j;
+            }
+        }
+        
+        int temp = arr[i];
+        arr[i] = arr[min_idx];
+        arr[min_idx] = temp;
+    }
+    return 0;
+}
+      </code></pre>
+    <hr>
+  </main>
+  <footer>
+    <small>© 2026 Тимур В. Все права защищены.</small>
+  </footer>
+</body>
+</html>
